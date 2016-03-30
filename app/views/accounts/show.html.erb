@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+
+<p><%= @account.account_name %></p>
+<br>
+<p><%= @account.account_role %></p>
+<p><%= image_tag @account.avatar.url %>
+<%= image_tag @account.avatar.url(:medium) %>
+<%= image_tag @account.avatar.url(:thumb) %></p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
